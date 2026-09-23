@@ -24,6 +24,17 @@ def identity_code():
 greet()
 print("Identity Code:", identity_code())
 
+# [CELL 3] LEGB VALIDATION
+
+global_value = ID_SUM
+
+def scope_test():
+    global_value = SEED_DIGIT
+    print("Inside function:", global_value)
+    
+scope_test()
+print("Outside function:", global_value)
+
 # [CELL 4] PARAMETRIC PROCESSING
 
 def user_summary(title, *scores, **info):
